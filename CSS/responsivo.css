@@ -1,0 +1,503 @@
+
+/* =========================================
+   ESTÚDIO LUNELLE
+   RESPONSIVE STYLES
+   VERSION: BETA V1.0.0
+========================================= */
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero-content {
+        gap: 35px;
+    }
+
+    .hero-image img {
+        height: 380px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-detail {
+        gap: 35px;
+    }
+
+    .cart-layout {
+        grid-template-columns: 1fr 300px;
+        gap: 20px;
+    }
+
+}
+
+/* TABLETS E CELULARES GRANDES */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo-icon {
+        width: 37px;
+        height: 37px;
+    }
+
+    /* MENU MOBILE */
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background: white;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .cart-button {
+        padding: 9px 11px;
+        font-size: 0.75rem;
+    }
+
+    .login-link {
+        display: none;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .hero-benefits {
+        justify-content: center;
+    }
+
+    .hero-image {
+        min-height: auto;
+        padding: 0 15px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .floating-card {
+        left: 0;
+        bottom: 15px;
+    }
+
+    /* CATEGORIAS */
+
+    .categories-section {
+        padding: 65px 0;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .category-card {
+        min-height: 125px;
+    }
+
+    /* PRODUTOS */
+
+    .products-section {
+        padding: 65px 0;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-image img {
+        height: 200px;
+    }
+
+    .products-header {
+        align-items: flex-start;
+    }
+
+    /* SOBRE */
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    /* CATÁLOGO */
+
+    .catalog-toolbar {
+        flex-wrap: wrap;
+    }
+
+    .catalog-toolbar .search-box {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .catalog-toolbar select {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* DETALHES */
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-detail-image img {
+        height: 400px;
+    }
+
+    /* CARRINHO */
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        position: static;
+    }
+
+    /* RODAPÉ */
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* HEADER */
+
+    .navbar {
+        min-height: 68px;
+    }
+
+    .nav-links {
+        top: 68px;
+    }
+
+    .logo {
+        gap: 7px;
+        font-size: 0.88rem;
+    }
+
+    .logo-icon {
+        width: 33px;
+        height: 33px;
+        font-size: 1.3rem;
+    }
+
+    .cart-button {
+        gap: 5px;
+        padding: 8px;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.35rem;
+    }
+
+    .hero-text > p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-benefits {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-image img {
+        height: 270px;
+        border-radius: 20px;
+    }
+
+    .floating-card {
+        padding: 12px 15px;
+        left: -5px;
+    }
+
+    /* CATEGORIAS */
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .categories {
+        gap: 10px;
+    }
+
+    .category-card {
+        min-height: 110px;
+        padding: 15px;
+    }
+
+    .category-card span {
+        font-size: 1.6rem;
+    }
+
+    .category-card strong {
+        font-size: 0.8rem;
+    }
+
+    /* PRODUTOS */
+
+    .products-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .product-image img {
+        height: 155px;
+    }
+
+    .product-info {
+        padding: 12px;
+    }
+
+    .product-info h3 {
+        font-size: 0.82rem;
+    }
+
+    .product-info p {
+        font-size: 0.72rem;
+    }
+
+    .product-price {
+        font-size: 1.05rem;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .product-actions .btn {
+        width: 100%;
+        min-height: 40px;
+        font-size: 0.7rem;
+    }
+
+    /* SOBRE */
+
+    .about-section {
+        padding: 65px 0;
+    }
+
+    .about-image img {
+        height: 270px;
+    }
+
+    .about-text h2 {
+        font-size: 1.9rem;
+    }
+
+    /* CONTATO */
+
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-section h2 {
+        font-size: 1.9rem;
+    }
+
+    /* BANNER */
+
+    .page-banner {
+        padding: 55px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 2.3rem;
+    }
+
+    /* CATÁLOGO */
+
+    .catalog-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .catalog-toolbar select {
+        width: 100%;
+    }
+
+    /* PRODUTO INDIVIDUAL */
+
+    .product-detail-image img {
+        height: 300px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 2rem;
+    }
+
+    .product-detail-info .product-actions {
+        flex-direction: column;
+    }
+
+    .product-detail-info .product-actions .btn {
+        width: 100%;
+    }
+
+    /* CARRINHO */
+
+    .cart-section {
+        padding: 45px 0 70px;
+    }
+
+    .cart-item {
+        grid-template-columns: 75px 1fr;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .cart-item-image {
+        width: 75px;
+        height: 85px;
+    }
+
+    .cart-item-info h3 {
+        font-size: 0.82rem;
+    }
+
+    .cart-item-info p {
+        font-size: 0.72rem;
+    }
+
+    .remove-item {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .cart-summary {
+        padding: 20px;
+    }
+
+    /* AUTENTICAÇÃO */
+
+    .auth-container {
+        width: 92%;
+        padding: 30px 0;
+    }
+
+    .auth-card {
+        padding: 25px 20px;
+    }
+
+    .auth-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-card {
+        padding: 25px 18px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions .btn {
+        width: 100%;
+    }
+
+    /* RODAPÉ */
+
+    .footer {
+        padding: 30px 0;
+    }
+
+}

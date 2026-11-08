@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes do produto | Estúdio Lunelle</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/produtos.css">
+    <link rel="stylesheet" href="../CSS/responsivo.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/WhatsApp Image 2026-10-28 at 12.00.47.jpeg">
+
+
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/produtos.js" defer></script>
+    <script src="../JS/carrinho.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Estúdio <strong>Lunelle</strong></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="../index.html#sobre">Sobre nós</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="login-link">Minha conta</a>
+
+                <a href="carrinho.html" class="cart-button">
+                    🛍 Carrinho
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+
+                <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="product-detail-section">
+            <div class="container">
+
+                <a href="produtos.html" class="back-link">
+                    ← Voltar aos produtos
+                </a>
+
+                <div class="product-detail" id="productDetail">
+
+                    <div class="product-detail-image">
+                        <img id="productImage" src="../assets/images/placeholder.jpg" alt="Imagem do produto">
+                    </div>
+
+                    <div class="product-detail-info">
+
+                        <span class="eyebrow" id="productCategory">
+                            CATEGORIA
+                        </span>
+
+                        <h1 id="productName">Carregando produto...</h1>
+
+                        <p id="productDescription">
+                            Aguarde enquanto carregamos os detalhes do produto.
+                        </p>
+
+                        <strong class="product-price" id="productPrice">
+                            R$ 0,00
+                        </strong>
+
+                        <div class="quantity-control">
+                            <label for="productQuantity">Quantidade:</label>
+
+                            <input type="number" id="productQuantity" min="1" value="1">
+                        </div>
+
+                        <div class="product-actions">
+
+                            <button type="button" class="btn btn-primary" id="addToCart">
+                                Adicionar ao carrinho
+                            </button>
+
+                            <button type="button" class="btn btn-outline" id="buyNow">
+                                Comprar agora
+                            </button>
+
+                        </div>
+
+                        <div class="product-information">
+                            <p>✦ Atendimento personalizado.</p>
+                            <p>✦ Produtos selecionados com carinho.</p>
+                            <p>✦ Compra finalizada pelo Instagram.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Estúdio Lunelle.</p>
+            <span>Desenvolvido por <strong>EFDev</strong></span>
+            <span class="version">BETA V1.0.0</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

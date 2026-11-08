@@ -1,0 +1,287 @@
+
+/* =========================================
+   ESTÚDIO LUNELLE
+   AUTHENTICATION STYLES
+   VERSION: BETA V1.0.0
+========================================= */
+
+.auth-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 10% 10%, #E9DDFF, transparent 35%),
+        linear-gradient(135deg, #FAF8FF, #F0E8FF);
+}
+
+.auth-container {
+    width: min(480px, 90%);
+    margin: 0 auto;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-container > .logo {
+    margin-bottom: 30px;
+}
+
+.auth-card {
+    width: 100%;
+    padding: 40px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.auth-heading p {
+    font-size: 0.85rem;
+}
+
+/* GOOGLE */
+
+.google-button {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+.google-button:hover {
+    background: var(--lavender-light);
+    border-color: var(--purple-light);
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* DIVISOR */
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: var(--border);
+}
+
+/* FORMULÁRIOS */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #FFFDFF;
+    color: var(--text);
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #B4A9C1;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.form-group input:disabled {
+    background: #F3EFF8;
+    cursor: not-allowed;
+}
+
+/* RECUPERAÇÃO */
+
+.forgot-password {
+    display: block;
+    width: fit-content;
+    margin: -5px 0 20px auto;
+    color: var(--purple);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.forgot-password:hover {
+    color: var(--purple-dark);
+    text-decoration: underline;
+}
+
+/* BOTÃO DE AUTENTICAÇÃO */
+
+.auth-submit {
+    width: 100%;
+    border: none;
+    margin-top: 8px;
+}
+
+/* TERMOS */
+
+.terms-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 0.78rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.terms-checkbox input {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--purple);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+/* MENSAGENS */
+
+.form-message {
+    margin-top: 15px;
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+.form-message.success {
+    color: var(--success);
+}
+
+.form-message.error {
+    color: #DC2626;
+}
+
+/* RODAPÉ AUTH */
+
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.85rem;
+}
+
+.auth-footer a {
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    margin-top: 25px;
+    color: var(--purple-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.back-home:hover {
+    color: var(--purple);
+}
+
+/* PERFIL */
+
+.profile-section {
+    padding: 80px 0;
+}
+
+.profile-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: white;
+    box-shadow: var(--shadow);
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--lavender);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-information {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-information h2 {
+    font-size: 1.6rem;
+}
+
+.profile-information p {
+    font-size: 0.85rem;
+}
+
+.profile-details {
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+}
+
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.profile-actions .btn {
+    flex: 1;
+}

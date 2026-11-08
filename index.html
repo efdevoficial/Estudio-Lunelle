@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Estúdio Lunelle - Papelaria criativa e personalizados digitais feitos especialmente para você.">
+
+    <title>Estúdio Lunelle | Papelaria & Personalizados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsivo.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/WhatsApp Image 2026-10-28 at 12.00.47.jpeg">
+
+
+    <script src="JS/main.js" defer></script>
+    <script src="JS/produtos.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Estúdio <strong>Lunelle</strong></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="pages/login.html" class="login-link">
+                    Minha conta
+                </a>
+
+                <a href="pages/carrinho.html" class="cart-button">
+                    🛍 Carrinho
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+
+                <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        ✦ CRIATIVIDADE EM CADA DETALHE
+                    </span>
+
+                    <h1>
+                        Pequenos detalhes,
+                        <span>grandes momentos.</span>
+                    </h1>
+
+                    <p>
+                        Papelaria criativa e personalizados digitais
+                        feitos especialmente para transformar suas ideias
+                        em algo inesquecível.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="pages/produtos.html" class="btn btn-primary">
+                            Explorar produtos →
+                        </a>
+
+                        <a href="#sobre" class="btn btn-outline">
+                            Conheça nossa loja
+                        </a>
+                    </div>
+
+                    <div class="hero-benefits">
+                        <span>✦ Produtos criativos</span>
+                        <span>✦ Personalização especial</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="./assets/logo/WhatsApp Image 2026-10-28 at 12.00.47.jpeg"
+                        alt="Produtos e materiais de papelaria"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section class="categories-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">NOSSO UNIVERSO</span>
+                    <h2>Explore nossas categorias</h2>
+                </div>
+
+                <div class="categories">
+
+                    <a href="pages/produtos.html?categoria=todos" class="category-card">
+                        <span>✨</span>
+                        <strong>Todos</strong>
+                    </a>
+
+                    <a href="pages/produtos.html?categoria=papelaria" class="category-card">
+                        <span>📒</span>
+                        <strong>Papelaria</strong>
+                    </a>
+
+                    <a href="pages/produtos.html?categoria=digital" class="category-card">
+                        <span>💻</span>
+                        <strong>Digitais</strong>
+                    </a>
+
+                    <a href="pages/produtos.html?categoria=personalizados" class="category-card">
+                        <span>🎀</span>
+                        <strong>Personalizados</strong>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRODUTOS EM DESTAQUE -->
+        <section class="products-section" id="produtos">
+            <div class="container">
+
+                <div class="products-header">
+                    <div>
+                        <span class="eyebrow">ESCOLHIDOS COM CARINHO</span>
+                        <h2>Nossos destaques</h2>
+                        <p>Descubra nossos produtos especiais.</p>
+                    </div>
+
+                    <a href="pages/produtos.html" class="text-link">
+                        Ver todos →
+                    </a>
+                </div>
+
+                <div class="products-grid" id="featuredProducts">
+                    <!-- Produtos carregados pelo JavaScript -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE A LOJA -->
+        <section class="about-section" id="sobre">
+            <div class="container about-content">
+
+                <div class="about-image">
+                    <img
+                        src="./assets/logo/WhatsApp Image 2026-10-28 at 12.00.47.jpeg"
+                        alt="Ambiente criativo do Estúdio Lunelle"
+                    >
+                </div>
+
+                <div class="about-text">
+
+                    <span class="eyebrow">UM POUCO SOBRE NÓS</span>
+
+                    <h2>Mais que produtos, criamos experiências.</h2>
+
+                    <p>
+                        O Estúdio Lunelle nasceu da paixão por criatividade,
+                        organização e detalhes que fazem a diferença.
+                    </p>
+
+                    <p>
+                        Nossa missão é oferecer produtos de papelaria e
+                        personalizados que tornem cada momento ainda
+                        mais especial.
+                    </p>
+
+                    <a href="pages/produtos.html" class="btn btn-primary">
+                        Conheça nossos produtos →
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contact-section" id="contato">
+            <div class="container contact-content">
+
+                <span class="eyebrow">VAMOS CONVERSAR?</span>
+
+                <h2>Tem alguma dúvida ou deseja personalizar algo?</h2>
+
+                <p>
+                    Entre em contato conosco pelo Instagram.
+                    Será um prazer atender você!
+                </p>
+
+                <a
+                    href="https://www.instagram.com/estudiolunelle_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                >
+                    Falar com a Lunelle →
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Estúdio <strong>Lunelle</strong></span>
+            </a>
+
+            <p>
+                © 2026 Estúdio Lunelle. Todos os direitos reservados.
+            </p>
+
+            <span>Desenvolvido por <strong>EFDev</strong></span>
+
+            <span class="version">BETA V1.0.0</span>
+
+        </div>
+    </footer>
+
+</body>
+</html>

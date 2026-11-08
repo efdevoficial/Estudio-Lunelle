@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu carrinho | Estúdio Lunelle</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/produtos.css">
+    <link rel="stylesheet" href="../CSS/responsivo.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/WhatsApp Image 2026-10-28 at 12.00.47.jpeg">
+
+
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/carrinho.js" defer></script>
+    <script src="../JS/checkout.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Estúdio <strong>Lunelle</strong></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+            </nav>
+
+            <a href="login.html" class="login-link">Minha conta</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cart-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">SEU PEDIDO</span>
+                    <h1>Meu carrinho</h1>
+                    <p>Confira seus produtos antes de finalizar.</p>
+                </div>
+
+                <div class="cart-layout">
+
+                    <div class="cart-products">
+
+                        <div class="cart-items" id="cartItems">
+                            <!-- Itens carregados pelo JavaScript -->
+                        </div>
+
+                        <div class="cart-empty" id="cartEmpty" hidden>
+                            <span>🛍</span>
+                            <h2>Seu carrinho está vazio.</h2>
+                            <p>Que tal conhecer nossos produtos?</p>
+
+                            <a href="produtos.html" class="btn btn-primary">
+                                Explorar produtos
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <aside class="cart-summary">
+
+                        <h2>Resumo do pedido</h2>
+
+                        <div class="summary-row">
+                            <span>Quantidade de itens</span>
+                            <strong id="cartQuantity">0</strong>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <strong id="cartSubtotal">R$ 0,00</strong>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <strong id="cartTotal">R$ 0,00</strong>
+                        </div>
+
+                        <button type="button" class="btn btn-primary checkout-button" id="checkoutButton">
+                            Finalizar pedido →
+                        </button>
+
+                        <a href="produtos.html" class="continue-shopping">
+                            Continuar comprando
+                        </a>
+
+                        <p class="checkout-info">
+                            O pedido será encaminhado ao Instagram da loja
+                            para atendimento e confirmação.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Estúdio Lunelle.</p>
+            <span>Desenvolvido por <strong>EFDev</strong></span>
+            <span class="version">BETA V1.0.0</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

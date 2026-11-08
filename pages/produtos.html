@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossos produtos | Estúdio Lunelle</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/produtos.css">
+    <link rel="stylesheet" href="../CSS/responsivo.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/WhatsApp Image 2026-10-28 at 12.00.47.jpeg">
+
+
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/produtos.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Estúdio <strong>Lunelle</strong></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="../index.html#sobre">Sobre nós</a>
+                <a href="../index.html#contato">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="login-link">Minha conta</a>
+
+                <a href="carrinho.html" class="cart-button">
+                    🛍 Carrinho
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+
+                <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <div class="container">
+                <span class="eyebrow">DESCUBRA NOSSO UNIVERSO</span>
+                <h1>Nossos produtos</h1>
+                <p>Encontre produtos criativos e personalizados para você.</p>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+
+                <div class="catalog-toolbar">
+
+                    <div class="search-box">
+                        <input type="search" id="searchInput" placeholder="Buscar produtos...">
+                    </div>
+
+                    <select id="categoryFilter" aria-label="Filtrar categoria">
+                        <option value="todos">Todas as categorias</option>
+                        <option value="papelaria">Papelaria</option>
+                        <option value="digital">Digitais</option>
+                        <option value="personalizados">Personalizados</option>
+                    </select>
+
+                    <select id="sortProducts" aria-label="Ordenar produtos">
+                        <option value="default">Ordenar por</option>
+                        <option value="price-asc">Menor preço</option>
+                        <option value="price-desc">Maior preço</option>
+                        <option value="name">Nome</option>
+                    </select>
+
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Produtos gerados pelo JavaScript -->
+                </div>
+
+                <p id="emptyMessage" class="empty-message" hidden>
+                    Nenhum produto encontrado.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Estúdio <strong>Lunelle</strong></span>
+            </a>
+
+            <p>© 2026 Estúdio Lunelle. Todos os direitos reservados.</p>
+            <span>Desenvolvido por <strong>EFDev</strong></span>
+            <span class="version">BETA V1.0.0</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
